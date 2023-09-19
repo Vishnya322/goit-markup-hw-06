@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -35,6 +36,16 @@
             <li><a class="nav-list link" href="">Contacts</a></li>
           </ul>
         </nav>
+        <botton class="burger-menu">
+          <svg
+            class="burger-menu-mobile"
+            width="24"
+            height="24"
+            aria-label="burger menu icon"
+          >
+            <use href="./images/icons.svg#icon-solid_menu"></use>
+          </svg>
+        </botton>
         <address class="top-adress">
           <ul class="list top-adress-flex">
             <li>
@@ -55,16 +66,16 @@
     </header>
 
     <main>
-      <section class="top-section">
+      <!-- <section class="top-section">
         <div class="solution-cont container">
           <h1 class="top-section-title">
             Effective Solutions for Your Business
           </h1>
           <button class="button" type="button">Order Service</button>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section-title">
+      <!-- <section class="section-title">
         <div class="container">
           <h2 class="visually-hidden">Our advantages</h2>
           <ul class="advantages-list list">
@@ -118,9 +129,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="ourteam-section">
+      <!-- <section class="ourteam-section">
         <div class="container">
           <h2 class="ourteam-title">Our Team</h2>
           <ul class="ourteam-section-flax list">
@@ -291,9 +302,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="portfolio">
+      <!-- <section class="portfolio">
         <div class="container">
           <h2 class="portfolio-header">Our Portfolio</h2>
           <ul class="project-card-list list">
@@ -387,10 +398,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="under-page">
+    <!-- <footer class="under-page">
       <div class="container footer-container">
         <div class="logo-web-footer">
           <a class="logo-footer web-futer link" href="./index.html"
@@ -453,10 +464,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- BACKDROP -->
-    <div class="backdrop is-open">
+    <!-- <div class="backdrop">
       <div class="modal">
         <button class="close-btn" type="button">
           <svg
@@ -572,6 +583,79 @@
           </div>
           <button class="review-form-submit" type="submit">Send</button>
         </form>
+      </div>
+    </div> -->
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu">
+      <button class="mobile-menu-close-btn">
+        <svg
+          class="mobile-menu-close-icon"
+          width="8"
+          height="8"
+          aria-label="modal close icon"
+        >
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="list mobile-menu-list">
+          <li class="mobile-menu-list-item current">Studio</li>
+          <li class="mobile-menu-list-item">Portfolio</li>
+          <li class="mobile-menu-list-item">Contacts</li>
+        </ul>
+      </nav>
+      <div class="navigation-contacts">
+        <address>
+          <ul class="list top-adress-flex">
+            <li>
+              <a
+                class="header-address-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="header-address-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div>
+          <ul class="social-list list">
+            <li class="social-list-title">
+              <a href="#" class="social-list-ellips">
+                <svg class="social-list-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-title">
+              <a href="#" class="social-list-ellips">
+                <svg class="social-list-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-title">
+              <a href="#" class="social-list-ellips">
+                <svg class="social-list-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-title">
+              <a href="#" class="social-list-ellips">
+                <svg class="social-list-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
