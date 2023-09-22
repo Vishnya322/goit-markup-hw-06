@@ -7,3 +7,6 @@
 
 /* LAYOUT */
 @import './layout/header.css';
+@import './layout/section.css';
+@import './layout/footer.css';
+@import './layout/backdrop.css';

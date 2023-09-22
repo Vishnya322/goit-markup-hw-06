@@ -1,0 +1,236 @@
+/* Footer */
+/* 0 - 767px */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 72px;
+    
+}
+
+.under-page {
+    
+    background: var(--navyblue, #2E2F42);
+    padding: 100px 0;
+}
+
+.studio-footer {
+    color: #F4F4FD;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-text {
+    color: #F4F4FD;
+    width: 264px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+   
+}
+
+.web-futer {
+    display: inline-block;
+    padding-left: 0;
+    margin-bottom: 16px;
+}
+
+.logo-web-footer {
+    text-align: center;
+    
+}
+
+.logo-footer {
+    color: #4D5AE5;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.social-list-ft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-list-title-footer {
+    width: 40px;
+    height: 40px;
+}
+
+.social-footer-text {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.sle {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sle:hover,
+.sle:focus {
+    background-color: #31d0aa;
+}
+
+
+.text-form {
+    color: var(--WHITE, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    text-align: center;
+
+}
+
+.form-email {
+    color: var(--WHITE, #FFF);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    border: 1px solid var(--WHITE, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    margin: auto;
+    width: 264px;
+    height: 40px;
+    background: var(--NAVY-BLUE, #2E2F42);
+    background-color: transparent;
+    padding-left: 16px;
+
+}
+
+.form-email::placeholder {
+    color: var(--WHITE, #FFF);
+
+
+}
+
+.form-button-subscribe {
+    display: inline-flex;
+    min-width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--IRIS, #4D5AE5);
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--WHITE, #FFF);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button-subscribe:hover,
+.form-button-subscribe:focus {
+    background-color: #404BBF;
+}
+
+
+.text-form-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.form-block-email {
+    width: 264px;
+    height: 40px;
+    color: var(--WHITE, #FFF);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2.0;
+    letter-spacing: 0.04em;
+    text-align: start;
+}
+
+.email-fly {
+    margin-left: 16px;
+}
+/* 768px - 1157px */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+.footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 584px;
+        gap: 72px 24px;
+}
+.text-form-block {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.text-form {
+text-align: start;
+}
+}
+/* 1158px - ... */
+
+@media screen and (min-width: 1158px) {
+.footer-container {
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+        }
+
+.web-futer {
+    display: inline-block;
+    padding-left: 0;
+    margin-bottom: 16px;
+}
+
+.text-form-block {
+    flex-direction: row;
+    align-items: start;
+    gap: 24px;
+}
+.social-footer-title {
+    margin-right: 80px;
+}
+
+.social-footer-text{
+text-align: start;
+}
+
+.text-form {
+text-align: start;
+}
+
+.logo-web-footer {
+    margin-right: 120px;
+}
+.logo-web-footer {
+    text-align: start;
+}
+} 
+
