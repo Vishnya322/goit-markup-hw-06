@@ -12,7 +12,8 @@
 .under-page {
     
     background: var(--navyblue, #2E2F42);
-    padding: 100px 0;
+    padding-top: 97.5px;
+    padding-bottom: 96px;
 }
 
 .studio-footer {
@@ -30,6 +31,9 @@
     width: 264px;
     line-height: 24px;
     letter-spacing: 0.32px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
    
 }
 
@@ -201,6 +205,10 @@
 .social-footer-text {
     text-align: start;
 }
+.under-page {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 
 }
 
@@ -211,7 +219,7 @@
 .footer-container {
     align-items: baseline;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 0;
         }
 
@@ -244,5 +252,10 @@ text-align: start;
 .logo-web-footer {
     text-align: start;
 }
+.under-page {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 } 
 
