@@ -10,7 +10,7 @@
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../../images/mobile/people-office@1x.png);
+        url(../../images/desktop/p-o\ mob.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%, 50%;
@@ -22,10 +22,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px),
 screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 .top-section {
 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(../../images/mobile/people-office@2x.jpg)
+        rgba(46, 47, 66, 0.7)), url(../../images/desktop/p-o\ mob@2x.jpg)
 }
 }
-
 
 
 .solution-cont {
@@ -80,7 +79,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 @media screen and (min-width: 768px) {
 .top-section{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-rgba(46, 47, 66, 0.7)), url(../../images/tablet/Dark-bg.png);}
+rgba(46, 47, 66, 0.7)), url(../../images/desktop/p-o\ tab.jpg);}
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -88,7 +87,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
  .top-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-rgba(46, 47, 66, 0.7)), url(../../images/tablet/Dark-bg@2x.png)
+rgba(46, 47, 66, 0.7)), url(../../images/desktop/p-o\ tab@2x.jpg)
     }
 }
 
@@ -96,8 +95,9 @@ rgba(46, 47, 66, 0.7)), url(../../images/tablet/Dark-bg@2x.png)
 
 @media screen and (min-width: 1158px) {
     .top-section {
+        max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../../images/desktop/people-office\ 1.png);
+                rgba(46, 47, 66, 0.7)), url(../../images/desktop/people-office\ dt.jpg);
     }
 }
 
@@ -106,10 +106,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     .top-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../../images/desktop/people-office\ 1@2x.png)
+        rgba(46, 47, 66, 0.7)),
+            url(../../images/desktop/people-office\ dt@2x.jpg);
     }
 }
-
 
 
 /* Section 2 */
@@ -121,7 +121,13 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     .advantages-icon {
         display: none;
     }
-    
+        .advantages-list-item {
+            display: flex;
+            width: 288px;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
 }
 
 .section-title {
@@ -139,13 +145,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
         
 }
 
-.advantages-list-item {
-    display: flex;
-        width: 288px;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-   }
+
 
 .section-title-item {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -216,6 +216,9 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 .title-item-text {
     font-weight: 400;
 }
+.section-title-item {
+text-align: start;
+}
 
  }
 
@@ -254,13 +257,15 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 }
 
 .teamcard {
-display: flex;
-    width: 264px;
-    padding-bottom: 0px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 32px;
+    padding-top: 32px;
+    width: 264px;
+    padding-bottom: 0px;
+    
     background: #FFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -275,6 +280,8 @@ display: flex;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
+    padding-top: 32px;
+    margin-bottom: 8px;
 
 
 }
@@ -306,7 +313,7 @@ display: flex;
 .social-list-title {
     width: 40px;
     height: 40px;
-    margin-top: 8px;
+    
 }
 
 .social-list-ellips {
@@ -349,6 +356,12 @@ display: flex;
     flex-direction: row;
     gap: 24px;
 }
+
+.teamcard {
+    display: block;
+    padding-top: 32px;
+    width: calc((100% - 72px) / 4);
+
 
 }
    
@@ -421,9 +434,9 @@ display: flex;
     letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 1158px) {
-.overlay {
-    display: none;
+@media screen and (max-width: 1157px) {
+   .overlay {
+       display: none;
 }
 }
 
@@ -435,6 +448,7 @@ display: flex;
         }
 
     .project-card-list {
+        
         flex-direction: row; 
         flex-wrap: wrap;
         row-gap: 72px;

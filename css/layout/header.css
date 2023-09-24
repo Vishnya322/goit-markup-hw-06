@@ -315,11 +315,16 @@ font-family: Roboto, sans-serif;
 /* 1158 - ... */
 
 
-@media screen  and (min-width: 1158px) {
+@media screen  and (min-width: 1158px) and (max-width: 1440px) {
 .top-adress-flex {
      flex-direction: row;
     align-items: center;
     gap: 40px;
     
 }
+
+.header-flax {
+    padding-top: 0;
+    padding-bottom: 0;
 }
+
